@@ -41,17 +41,17 @@ public class App {
         allNotifier3.send();
         System.out.println("__end");
 
-        // 이메일 알림
+        // 4. 이메일 알림
         Notifier emailNotifier = new EmailNotifier();
         emailNotifier.send();
         System.out.println("__end");
 
-        // 문자 알림
+        // 5. 문자 알림
         Notifier smsNotifier = new SmsNotifier();
         smsNotifier.send();
         System.out.println("__end");
 
-        // 문자 알림 + 이메일 알림
+        // 6. 문자 알림 + 이메일 알림
         Notifier smsAndEmailNotifier = new EmailNotifier(new SmsNotifier());
         smsAndEmailNotifier.send();
         System.out.println("__end");
